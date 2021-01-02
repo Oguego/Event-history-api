@@ -1,0 +1,22 @@
+<br>
+<br>
+<br>
+<div class="row justify-content-center">
+  <div class="col-sm-12 col-md-8">
+
+    <div class="card card-fluid">
+        <h6 class="card-header">
+            <span class="badge badge-pill badge-info"><h3>Events Details</h3></span> <br>
+            <h3  class="row justify-content-center"> <span class="badge badge-pill badge-secondary"> Posted events </span></h3>
+        </h6>
+
+            <div class="card-body" >
+              <%= render 'event_history', events: @events %>
+            </div>
+
+            <div class = "card-footer text-right" >
+              <%= link_to 'Back', root_path, class: 'btn btn-primary btn-sm'  %>
+            </div>
+    </div>
+  </div>
+</div>

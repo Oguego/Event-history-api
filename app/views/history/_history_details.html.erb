@@ -1,0 +1,31 @@
+<table class="table table-bordered table-hover">
+  <thead>
+  <tr>
+    <th>Event code</th>
+    <th>When</th>
+    <th>User</th>
+    <th>Event Type</th>
+    <th>Data Before</th>
+    <th>Data After</th>
+    <th>Event ID</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% histories.each do |history| %>
+    <tr>
+      <td><%= history.id %></td>
+      <td><%= history.when %></td>
+      <td><%= history.user %></td>
+      <td><%= history.event_type %></td>
+      <td><%= history.data_before %></td>
+      <td><%= history.data_after %></td>
+      <td><%= history.event_id %></td>
+      <td><%= history.created_at %></td>
+      <td><%= history.updated_at %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
